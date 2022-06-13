@@ -10,7 +10,7 @@ function calcular(){
 
    let Adultos = numAdultos.value;
    let  Criancas = numCriancas.value;
-   let duracao = numCriancas.value
+   let duracao = numHoras.value
 
    let qtdCarne = carnePP(duracao) * Adultos + (carnePP(duracao) / 2 * Criancas)
 
