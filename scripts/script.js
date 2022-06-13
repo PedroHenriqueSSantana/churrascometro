@@ -3,7 +3,7 @@ let numAdultos = document.getElementById("adultos")
 let numCriancas = document.getElementById("criancas")
 let numHoras = document.getElementById("duracao")
 
-let result = document.getElementById("inputResult") 
+let result = document.getElementById("resultado")
 
 
 function calcular(){
@@ -15,12 +15,13 @@ function calcular(){
    let qtdCarne = carnePP(duracao) * Adultos + (carnePP(duracao) / 2 * Criancas)
 
    //não implementado 
-   let qtdCerveja = 1200 * Adultos + (0 * Criancas)
+   let qtdCerveja = bebidaPP(duracao) * Adultos + (bebidaPP(duracao) * 0 )
    //não implementado
-   let qtdRefri = 1000 * Adultos + (1000 / 2 * Criancas)
+   let qtdRefri = refriPP(duracao) * Adultos + (refriPP(duracao) / 2 * Criancas)
 
-  console.log(qtdCarne)
-
+    result.innerHTML = `<p>${qtdCarne}g de carne`
+    result.innerHTML += `<p>${qtdCerveja}ml de bebida`
+    result.innerHTML += `<p>${qtdRefri}ml de refri`
 }
 
 function carnePP(duracao){
@@ -32,3 +33,20 @@ function carnePP(duracao){
     }
     
 }
+
+function bebidaPP(duracao){
+    if(duracao >= 6){
+        return 2000;
+    }else{
+        return 1200
+    }
+}
+
+function refriPP(duracao){
+    if(duracao >= 6){
+        return 1500;
+    }else{
+        return 1000
+    }
+}
+
