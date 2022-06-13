@@ -1,0 +1,80 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+.menuCaixa{
+    display: flex;
+    margin: auto;
+    margin-top: 20%;
+
+    justify-content: center;
+    
+    width: 300px;
+    height: 500px;
+
+    background-color: beige;
+    border-radius: 10px;
+    border: 2px solid;
+    
+}
+
+#title{
+    font-family: 'Permanent Marker', cursive;
+    font-size:1.5rem;
+    position:absolute;
+    margin-top:50px ;
+    
+}
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+    justify-content: center;
+    
+}
+
+.valorChurras{
+    color:black;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 1000;
+
+
+    display:flex;
+    width: 200px;
+    height: 20px;
+
+    margin: 5px;
+    padding: 3px;
+    justify-content: center;
+
+    border: 1px solid;
+    border-radius: 5px ;
+   
+}
+
+#inputResult{
+    text-align: center;
+    width: 110px;
+    height: 45px;
+    padding: 5px;
+  
+    border: 2px solid;
+    background-color: rgb(255, 255, 0);
+    align-self: center;
+    margin-bottom: 25px;
+}
+
+#result{
+    justify-content: left;
+
+}
+
+
+.liResult{
+    margin-bottom: 10px;
+    font-size: large;
+}
+
+

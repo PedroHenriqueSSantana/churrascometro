@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./churrascometro/styles/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="menuCaixa" >
+        
+            <span id="title">CHURRASCOMETRO</span>
+        
+
+        <form action="" method="GET" class="menu" id="formulario">
+
+            <input id="input1" class="valorChurras" name="numAdultos" placeholder="Adultos"         type="number" required>
+            <input id="input2" class="valorChurras" name="numCriancas"placeholder="Crianças"        type="number">
+            <input id="input3" class="valorChurras" name="numHoras"   placeholder="Tempo (horas)"   type="number" required>
+            <button id="inputResult" class="valorChurras" type="submit" onclick="calcular()">ENVIAR</button>
+
+            <div id="result">
+                <ul id="ulResult">
+                    <li class="liResult" id="result1">Cerveja:</li>
+                    <li class="liResult" id="result2">Refrigerante:</li>
+                    <li class="liResult" id="result3">Carne:</li>
+                    <li class="liResult" id="result4">Valor gasto:</li>
+                </ul>
+            </div>
+
+        </form>
+
+      
+    
+
+    </div>
+
+    
+    <script src="/churrascometro/scripts/script.js"></script>
+</body>
+</html>
