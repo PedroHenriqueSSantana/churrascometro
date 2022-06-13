@@ -1,9 +1,9 @@
 
-let numAdultos = document.getElementById("input1")
-let numCriancas = document.getElementById("input2")
-let numHoras = document.getElementById("input3")
+let numAdultos = document.getElementById("adultos")
+let numCriancas = document.getElementById("criancas")
+let numHoras = document.getElementById("duracao")
 
-let result = document.getElementById("result") 
+let result = document.getElementById("inputResult") 
 
 
 function calcular(){
@@ -23,9 +23,9 @@ function calcular(){
 
 }
 
-function carnePP(input3){
+function carnePP(duracao){
 
-    if(numHoras >= 6){
+    if(duracao >= 6){
         return 650;
     }else{
         return 400
