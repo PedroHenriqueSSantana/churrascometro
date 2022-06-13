@@ -14,8 +14,9 @@ function calcular(){
 
    let qtdCarne = carnePP(duracao) * Adultos + (carnePP(duracao) / 2 * Criancas)
 
+   //não implementado 
    let qtdCerveja = 1200 * Adultos + (0 * Criancas)
-
+   //não implementado
    let qtdRefri = 1000 * Adultos + (1000 / 2 * Criancas)
 
   console.log(qtdCarne)
