@@ -19,9 +19,9 @@ function calcular(){
    //não implementado
    let qtdRefri = refriPP(duracao) * Adultos + (refriPP(duracao) / 2 * Criancas)
 
-    result.innerHTML = `<p>${qtdCarne/1000}kg de carne`
-    result.innerHTML += `<p>${Math.ceil(qtdCerveja/355)}Latas de bebida`
-    result.innerHTML += `<p>${Math.ceil(qtdRefri/2000)}Litros de refri`
+    result.innerHTML = `<p>${qtdCarne/1000} kg de carne`
+    result.innerHTML += `<p>${Math.ceil(qtdCerveja/355)} Latas de bebida`
+    result.innerHTML += `<p>${Math.ceil(qtdRefri/2000)} Litros de refri`
     
     console.log('quantidade de carne:',qtdCarne/1000,'kg')
     console.log('quantidade de cerveja:',Math.ceil(qtdCerveja/355),'Latas ')
